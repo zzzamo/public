@@ -1,1 +1,620 @@
-Hello world!
+<!DOCTYPE html>
+<html>
+<head>
+	<script>
+	/* 
+																																																											
+																																																											
+	NNNNNNNN        NNNNNNNN                      hhhhhhh                                                                                                                                                                                   
+	N:::::::N       N::::::N                      h:::::h                                                                                                                                                                                   
+	N::::::::N      N::::::N                      h:::::h                                                                                                                                                                                   
+	N:::::::::N     N::::::N                      h:::::h                                                                                                                                                                                   
+	N::::::::::N    N::::::N   ooooooooooo         h::::h hhhhh         aaaaaaaaaaaaa      ggggggggg   ggggg  aaaaaaaaaaaaa       ssssssssss                                                                                                
+	N:::::::::::N   N::::::N oo:::::::::::oo       h::::hh:::::hhh      a::::::::::::a    g:::::::::ggg::::g  a::::::::::::a    ss::::::::::s                                                                                               
+	N:::::::N::::N  N::::::No:::::::::::::::o      h::::::::::::::hh    aaaaaaaaa:::::a  g:::::::::::::::::g  aaaaaaaaa:::::a ss:::::::::::::s                                                                                              
+	N::::::N N::::N N::::::No:::::ooooo:::::o      h:::::::hhh::::::h            a::::a g::::::ggggg::::::gg           a::::a s::::::ssss:::::s                                                                                             
+	N::::::N  N::::N:::::::No::::o     o::::o      h::::::h   h::::::h    aaaaaaa:::::a g:::::g     g:::::g     aaaaaaa:::::a  s:::::s  ssssss                                                                                              
+	N::::::N   N:::::::::::No::::o     o::::o      h:::::h     h:::::h  aa::::::::::::a g:::::g     g:::::g   aa::::::::::::a    s::::::s                                                                                                   
+	N::::::N    N::::::::::No::::o     o::::o      h:::::h     h:::::h a::::aaaa::::::a g:::::g     g:::::g  a::::aaaa::::::a       s::::::s                                                                                                
+	N::::::N     N:::::::::No::::o     o::::o      h:::::h     h:::::ha::::a    a:::::a g::::::g    g:::::g a::::a    a:::::a ssssss   s:::::s                                                                                              
+	N::::::N      N::::::::No:::::ooooo:::::o      h:::::h     h:::::ha::::a    a:::::a g:::::::ggggg:::::g a::::a    a:::::a s:::::ssss::::::s                                                                                             
+	N::::::N       N:::::::No:::::::::::::::o      h:::::h     h:::::ha:::::aaaa::::::a  g::::::::::::::::g a:::::aaaa::::::a s::::::::::::::s                                                                                              
+	N::::::N        N::::::N oo:::::::::::oo       h:::::h     h:::::h a::::::::::aa:::a  gg::::::::::::::g  a::::::::::aa:::a s:::::::::::ss                                                                                               
+	NNNNNNNN         NNNNNNN   ooooooooooo         hhhhhhh     hhhhhhh  aaaaaaaaaa  aaaa    gggggggg::::::g   aaaaaaaaaa  aaaa  sssssssssss                                                                                                 
+																									g:::::g                                                                                                                                 
+																						gggggg      g:::::g                                                                                                                                 
+																						g:::::gg   gg:::::g                                                                                                                                 
+																						 g::::::ggg:::::::g                                                                                                                                 
+																						  gg:::::::::::::g                                                                                                                                  
+																							ggg::::::ggg                                                                                                                                    
+																							   gggggg                                                                                                                                       
+																																																											
+																																																											
+			 tttt                                                                                                                                                                                                                           
+		  ttt:::t                                                                                                                                                                                                                           
+		  t:::::t                                                                                                                                                                                                                           
+		  t:::::t                                                                                                                                                                                                                           
+	ttttttt:::::ttttttt    rrrrr   rrrrrrrrr     aaaaaaaaaaaaa      mmmmmmm    mmmmmmm   ppppp   ppppppppp     aaaaaaaaaaaaa                                                                                                                
+	t:::::::::::::::::t    r::::rrr:::::::::r    a::::::::::::a   mm:::::::m  m:::::::mm p::::ppp:::::::::p    a::::::::::::a                                                                                                               
+	t:::::::::::::::::t    r:::::::::::::::::r   aaaaaaaaa:::::a m::::::::::mm::::::::::mp:::::::::::::::::p   aaaaaaaaa:::::a                                                                                                              
+	tttttt:::::::tttttt    rr::::::rrrrr::::::r           a::::a m::::::::::::::::::::::mpp::::::ppppp::::::p           a::::a                                                                                                              
+		  t:::::t           r:::::r     r:::::r    aaaaaaa:::::a m:::::mmm::::::mmm:::::m p:::::p     p:::::p    aaaaaaa:::::a                                                                                                              
+		  t:::::t           r:::::r     rrrrrrr  aa::::::::::::a m::::m   m::::m   m::::m p:::::p     p:::::p  aa::::::::::::a                                                                                                              
+		  t:::::t           r:::::r             a::::aaaa::::::a m::::m   m::::m   m::::m p:::::p     p:::::p a::::aaaa::::::a                                                                                                              
+		  t:::::t    tttttt r:::::r            a::::a    a:::::a m::::m   m::::m   m::::m p:::::p    p::::::pa::::a    a:::::a                                                                                                              
+		  t::::::tttt:::::t r:::::r            a::::a    a:::::a m::::m   m::::m   m::::m p:::::ppppp:::::::pa::::a    a:::::a                                                                                                              
+		  tt::::::::::::::t r:::::r            a:::::aaaa::::::a m::::m   m::::m   m::::m p::::::::::::::::p a:::::aaaa::::::a  ......                                                                                                      
+			tt:::::::::::tt r:::::r             a::::::::::aa:::am::::m   m::::m   m::::m p::::::::::::::pp   a::::::::::aa:::a .::::.                                                                                                      
+			  ttttttttttt   rrrrrrr              aaaaaaaaaa  aaaammmmmm   mmmmmm   mmmmmm p::::::pppppppp      aaaaaaaaaa  aaaa ......                                                                                                      
+																						  p:::::p                                                                                                                                           
+																						  p:::::p                                                                                                                                           
+																						 p:::::::p                                                                                                                                          
+																						 p:::::::p                                                                                                                                          
+																						 p:::::::p                                                                                                                                          
+																						 ppppppppp                                                                                                                                          
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+	   SSSSSSSSSSSSSSS                                              tttt                                          tttt                                                                                 tttt                                 
+	 SS:::::::::::::::S                                          ttt:::t                                       ttt:::t                                                                              ttt:::t                                 
+	S:::::SSSSSS::::::S                                          t:::::t                                       t:::::t                                                                              t:::::t                                 
+	S:::::S     SSSSSSS                                          t:::::t                                       t:::::t                                                                              t:::::t                                 
+	S:::::S              aaaaaaaaaaaaa   nnnn  nnnnnnnn    ttttttt:::::ttttttt      aaaaaaaaaaaaa        ttttttt:::::ttttttt        eeeeeeeeeeee             eeeeeeeeeeee        ssssssssss   ttttttt:::::ttttttt      aaaaaaaaaaaaa        
+	S:::::S              a::::::::::::a  n:::nn::::::::nn  t:::::::::::::::::t      a::::::::::::a       t:::::::::::::::::t      ee::::::::::::ee         ee::::::::::::ee    ss::::::::::s  t:::::::::::::::::t      a::::::::::::a       
+	 S::::SSSS           aaaaaaaaa:::::a n::::::::::::::nn t:::::::::::::::::t      aaaaaaaaa:::::a      t:::::::::::::::::t     e::::::eeeee:::::ee      e::::::eeeee:::::eess:::::::::::::s t:::::::::::::::::t      aaaaaaaaa:::::a      
+	  SS::::::SSSSS               a::::a nn:::::::::::::::ntttttt:::::::tttttt               a::::a      tttttt:::::::tttttt    e::::::e     e:::::e     e::::::e     e:::::es::::::ssss:::::stttttt:::::::tttttt               a::::a      
+		SSS::::::::SS      aaaaaaa:::::a   n:::::nnnn:::::n      t:::::t              aaaaaaa:::::a            t:::::t          e:::::::eeeee::::::e     e:::::::eeeee::::::e s:::::s  ssssss       t:::::t              aaaaaaa:::::a      
+		   SSSSSS::::S   aa::::::::::::a   n::::n    n::::n      t:::::t            aa::::::::::::a            t:::::t          e:::::::::::::::::e      e:::::::::::::::::e    s::::::s            t:::::t            aa::::::::::::a      
+				S:::::S a::::aaaa::::::a   n::::n    n::::n      t:::::t           a::::aaaa::::::a            t:::::t          e::::::eeeeeeeeeee       e::::::eeeeeeeeeee        s::::::s         t:::::t           a::::aaaa::::::a      
+				S:::::Sa::::a    a:::::a   n::::n    n::::n      t:::::t    tttttta::::a    a:::::a            t:::::t    tttttte:::::::e                e:::::::e           ssssss   s:::::s       t:::::t    tttttta::::a    a:::::a      
+	SSSSSSS     S:::::Sa::::a    a:::::a   n::::n    n::::n      t::::::tttt:::::ta::::a    a:::::a            t::::::tttt:::::te::::::::e               e::::::::e          s:::::ssss::::::s      t::::::tttt:::::ta::::a    a:::::a      
+	S::::::SSSSSS:::::Sa:::::aaaa::::::a   n::::n    n::::n      tt::::::::::::::ta:::::aaaa::::::a            tt::::::::::::::t e::::::::eeeeeeee        e::::::::eeeeeeee  s::::::::::::::s       tt::::::::::::::ta:::::aaaa::::::a      
+	S:::::::::::::::SS  a::::::::::aa:::a  n::::n    n::::n        tt:::::::::::tt a::::::::::aa:::a             tt:::::::::::tt  ee:::::::::::::e         ee:::::::::::::e   s:::::::::::ss          tt:::::::::::tt a::::::::::aa:::a     
+	 SSSSSSSSSSSSSSS     aaaaaaaaaa  aaaa  nnnnnn    nnnnnn          ttttttttttt    aaaaaaaaaa  aaaa               ttttttttttt      eeeeeeeeeeeeee           eeeeeeeeeeeeee    sssssssssss              ttttttttttt    aaaaaaaaaa  aaaa     
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																																																											
+																														 dddddddd                                                                                                           
+							   iiii                        iiii  lllllll                                                 d::::::d                                                                                                           
+							  i::::i                      i::::i l:::::l                                                 d::::::d                                                                                                           
+							   iiii                        iiii  l:::::l                                                 d::::::d                                                                                                           
+																 l:::::l                                                 d:::::d                                                                                                            
+	vvvvvvv           vvvvvvviiiiiii    ggggggggg   gggggiiiiiii  l::::l   aaaaaaaaaaaaa   nnnn  nnnnnnnn        ddddddddd:::::d    ooooooooooo                                                                                             
+	 v:::::v         v:::::v i:::::i   g:::::::::ggg::::gi:::::i  l::::l   a::::::::::::a  n:::nn::::::::nn    dd::::::::::::::d  oo:::::::::::oo                                                                                           
+	  v:::::v       v:::::v   i::::i  g:::::::::::::::::g i::::i  l::::l   aaaaaaaaa:::::a n::::::::::::::nn  d::::::::::::::::d o:::::::::::::::o                                                                                          
+	   v:::::v     v:::::v    i::::i g::::::ggggg::::::gg i::::i  l::::l            a::::a nn:::::::::::::::nd:::::::ddddd:::::d o:::::ooooo:::::o                                                                                          
+		v:::::v   v:::::v     i::::i g:::::g     g:::::g  i::::i  l::::l     aaaaaaa:::::a   n:::::nnnn:::::nd::::::d    d:::::d o::::o     o::::o                                                                                          
+		 v:::::v v:::::v      i::::i g:::::g     g:::::g  i::::i  l::::l   aa::::::::::::a   n::::n    n::::nd:::::d     d:::::d o::::o     o::::o                                                                                          
+		  v:::::v:::::v       i::::i g:::::g     g:::::g  i::::i  l::::l  a::::aaaa::::::a   n::::n    n::::nd:::::d     d:::::d o::::o     o::::o                                                                                          
+		   v:::::::::v        i::::i g::::::g    g:::::g  i::::i  l::::l a::::a    a:::::a   n::::n    n::::nd:::::d     d:::::d o::::o     o::::o                                                                                          
+			v:::::::v        i::::::ig:::::::ggggg:::::g i::::::il::::::la::::a    a:::::a   n::::n    n::::nd::::::ddddd::::::ddo:::::ooooo:::::o                                                                                          
+			 v:::::v         i::::::i g::::::::::::::::g i::::::il::::::la:::::aaaa::::::a   n::::n    n::::n d:::::::::::::::::do:::::::::::::::o                                                                                          
+			  v:::v          i::::::i  gg::::::::::::::g i::::::il::::::l a::::::::::aa:::a  n::::n    n::::n  d:::::::::ddd::::d oo:::::::::::oo                                                                                           
+			   vvv           iiiiiiii    gggggggg::::::g iiiiiiiillllllll  aaaaaaaaaa  aaaa  nnnnnn    nnnnnn   ddddddddd   ddddd   ooooooooooo                                                                                             
+												 g:::::g                                                                                                                                                                                    
+									 gggggg      g:::::g                                                                                                                                                                                    
+									 g:::::gg   gg:::::g                                                                                                                                                                                    
+									  g::::::ggg:::::::g                                                                                                                                                                                    
+									   gg:::::::::::::g                                                                                                                                                                                     
+										 ggg::::::ggg                                                                                                                                                                                       
+											gggggg                                                                                                                                                                                          
+																																																											
+																																				  bbbbbbbb                                                                                  
+																						  tttt                                                    b::::::b              iiii                                                                
+																					   ttt:::t                                                    b::::::b             i::::i                                                               
+																					   t:::::t                                                    b::::::b              iiii                                                                
+																					   t:::::t                                                     b:::::b                                                                                  
+	yyyyyyy           yyyyyyy     yyyyyyy           yyyyyyy   ooooooooooo        ttttttt:::::ttttttt      aaaaaaaaaaaaa      mmmmmmm    mmmmmmm    b:::::bbbbbbbbb    iiiiiii     eeeeeeeeeeee    nnnn  nnnnnnnn                            
+	 y:::::y         y:::::y       y:::::y         y:::::y  oo:::::::::::oo      t:::::::::::::::::t      a::::::::::::a   mm:::::::m  m:::::::mm  b::::::::::::::bb  i:::::i   ee::::::::::::ee  n:::nn::::::::nn                          
+	  y:::::y       y:::::y         y:::::y       y:::::y  o:::::::::::::::o     t:::::::::::::::::t      aaaaaaaaa:::::a m::::::::::mm::::::::::m b::::::::::::::::b  i::::i  e::::::eeeee:::::een::::::::::::::nn                         
+	   y:::::y     y:::::y           y:::::y     y:::::y   o:::::ooooo:::::o     tttttt:::::::tttttt               a::::a m::::::::::::::::::::::m b:::::bbbbb:::::::b i::::i e::::::e     e:::::enn:::::::::::::::n                        
+		y:::::y   y:::::y             y:::::y   y:::::y    o::::o     o::::o           t:::::t              aaaaaaa:::::a m:::::mmm::::::mmm:::::m b:::::b    b::::::b i::::i e:::::::eeeee::::::e  n:::::nnnn:::::n                        
+		 y:::::y y:::::y               y:::::y y:::::y     o::::o     o::::o           t:::::t            aa::::::::::::a m::::m   m::::m   m::::m b:::::b     b:::::b i::::i e:::::::::::::::::e   n::::n    n::::n                        
+		  y:::::y:::::y                 y:::::y:::::y      o::::o     o::::o           t:::::t           a::::aaaa::::::a m::::m   m::::m   m::::m b:::::b     b:::::b i::::i e::::::eeeeeeeeeee    n::::n    n::::n                        
+		   y:::::::::y                   y:::::::::y       o::::o     o::::o           t:::::t    tttttta::::a    a:::::a m::::m   m::::m   m::::m b:::::b     b:::::b i::::i e:::::::e             n::::n    n::::n                        
+			y:::::::y                     y:::::::y        o:::::ooooo:::::o           t::::::tttt:::::ta::::a    a:::::a m::::m   m::::m   m::::m b:::::bbbbbb::::::bi::::::ie::::::::e            n::::n    n::::n                        
+			 y:::::y                       y:::::y         o:::::::::::::::o           tt::::::::::::::ta:::::aaaa::::::a m::::m   m::::m   m::::m b::::::::::::::::b i::::::i e::::::::eeeeeeee    n::::n    n::::n                        
+			y:::::y                       y:::::y           oo:::::::::::oo              tt:::::::::::tt a::::::::::aa:::am::::m   m::::m   m::::m b:::::::::::::::b  i::::::i  ee:::::::::::::e    n::::n    n::::n                        
+		   y:::::y                       y:::::y              ooooooooooo                  ttttttttttt    aaaaaaaaaa  aaaammmmmm   mmmmmm   mmmmmm bbbbbbbbbbbbbbbb   iiiiiiii    eeeeeeeeeeeeee    nnnnnn    nnnnnn                        
+		  y:::::y                       y:::::y                                                                                                                                                                                             
+		 y:::::y                       y:::::y                                                                                                                                                                                              
+		y:::::y                       y:::::y                                                                                                                                                                                               
+	   y:::::y                       y:::::y                                                                                                                                                                                                
+	  yyyyyyy                       yyyyyyy                                                                                                                                                                                                 
+																																																											
+																																																											
+	*/
+	</script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script>
+		/* global jQuery, _ */
+		var CSV = {};
+
+		// Note that provision of jQuery is optional (it is **only** needed if you use fetch on a remote file)
+		(function(my) {
+		  "use strict";
+		  my.__type__ = "csv";
+
+		  // use either jQuery or Underscore Deferred depending on what is available
+		  var Deferred =
+			(typeof jQuery !== "undefined" && jQuery.Deferred) ||
+			(typeof _ !== "undefined" && _.Deferred) ||
+			function() {
+			  var resolve, reject;
+			  var promise = new Promise(function(res, rej) {
+				resolve = res;
+				reject = rej;
+			  });
+			  return {
+				resolve: resolve,
+				reject: reject,
+				promise: function() {
+				  return promise;
+				}
+			  };
+			};
+
+		  my.fetch = function(dataset) {
+			var dfd = new Deferred();
+			if (dataset.file) {
+			  var reader = new FileReader();
+			  var encoding = dataset.encoding || "UTF-8";
+			  reader.onload = function(e) {
+				var out = my.extractFields(my.parse(e.target.result, dataset), dataset);
+				out.useMemoryStore = true;
+				out.metadata = {
+				  filename: dataset.file.name
+				};
+				dfd.resolve(out);
+			  };
+			  reader.onerror = function(e) {
+				dfd.reject({
+				  error: {
+					message: "Failed to load file. Code: " + e.target.error.code
+				  }
+				});
+			  };
+			  reader.readAsText(dataset.file, encoding);
+			} else if (dataset.data) {
+			  var out = my.extractFields(my.parse(dataset.data, dataset), dataset);
+			  out.useMemoryStore = true;
+			  dfd.resolve(out);
+			} else if (dataset.url) {
+			  var fetch =
+				window.fetch ||
+				function(url) {
+				  var jq = jQuery.get(url);
+
+				  var promiseResult = {
+					then: function(res) {
+					  jq.done(res);
+					  return promiseResult;
+					},
+					catch: function(rej) {
+					  jq.fail(rej);
+					  return promiseResult;
+					}
+				  };
+				  return promiseResult;
+				};
+			  fetch(dataset.url)
+				.then(function(response) {
+				  if (response.text) {
+					return response.text();
+				  } else {
+					return response;
+				  }
+				})
+				.then(function(data) {
+				  var out = my.extractFields(my.parse(data, dataset), dataset);
+				  out.useMemoryStore = true;
+				  dfd.resolve(out);
+				})
+				.catch(function(req, status) {
+				  dfd.reject({
+					error: {
+					  message: "Failed to load file. " +
+						req.statusText +
+						". Code: " +
+						req.status,
+					  request: req
+					}
+				  });
+				});
+			}
+			return dfd.promise();
+		  };
+
+		  // Convert array of rows in { records: [ ...] , fields: [ ... ] }
+		  // @param {Boolean} noHeaderRow If true assume that first row is not a header (i.e. list of fields but is data.
+		  my.extractFields = function(rows, noFields) {
+			if (noFields.noHeaderRow !== true && rows.length > 0) {
+			  return {
+				fields: rows[0],
+				records: rows.slice(1)
+			  };
+			} else {
+			  return {
+				records: rows
+			  };
+			}
+		  };
+
+		  my.normalizeDialectOptions = function(options) {
+			// note lower case compared to CSV DDF
+			var out = {
+			  delimiter: ",",
+			  doublequote: true,
+			  lineterminator: "\n",
+			  quotechar: '"',
+			  skipinitialspace: true,
+			  skipinitialrows: 0
+			};
+			for (var key in options) {
+			  if (key === "trim") {
+				out["skipinitialspace"] = options.trim;
+			  } else {
+				out[key.toLowerCase()] = options[key];
+			  }
+			}
+			return out;
+		  };
+
+		  // ## parse
+		  //
+		  // For docs see the README
+		  //
+		  // Heavily based on uselesscode's JS CSV parser (MIT Licensed):
+		  // http://www.uselesscode.org/javascript/csv/
+		  my.parse = function(s, dialect) {
+			// When line terminator is not provided then we try to guess it
+			// and normalize it across the file.
+			if (!dialect || (dialect && !dialect.lineterminator)) {
+			  s = my.normalizeLineTerminator(s, dialect);
+			}
+
+			// Get rid of any trailing \n
+			var options = my.normalizeDialectOptions(dialect);
+			s = chomp(s, options.lineterminator);
+
+			var cur = "", // The character we are currently processing.
+			  inQuote = false,
+			  fieldQuoted = false,
+			  field = "", // Buffer for building up the current field
+			  row = [],
+			  out = [],
+			  i,
+			  processField;
+
+			processField = function(field) {
+			  if (fieldQuoted !== true) {
+				// If field is empty set to null
+				if (field === "") {
+				  field = null;
+				  // If the field was not quoted and we are trimming fields, trim it
+				} else if (options.skipinitialspace === true) {
+				  field = trim(field);
+				}
+
+				// Convert unquoted numbers to their appropriate types
+				if (rxIsInt.test(field)) {
+				  field = parseInt(field, 10);
+				} else if (rxIsFloat.test(field)) {
+				  field = parseFloat(field, 10);
+				}
+			  }
+			  return field;
+			};
+
+			for (i = 0; i < s.length; i += 1) {
+			  cur = s.charAt(i);
+
+			  // If we are at a EOF or EOR
+			  if (
+				inQuote === false &&
+				(cur === options.delimiter || cur === options.lineterminator)
+			  ) {
+				field = processField(field);
+				// Add the current field to the current row
+				row.push(field);
+				// If this is EOR append row to output and flush row
+				if (cur === options.lineterminator) {
+				  out.push(row);
+				  row = [];
+				}
+				// Flush the field buffer
+				field = "";
+				fieldQuoted = false;
+			  } else {
+				// If it's not a quotechar, add it to the field buffer
+				if (cur !== options.quotechar) {
+				  field += cur;
+				} else {
+				  if (!inQuote) {
+					// We are not in a quote, start a quote
+					inQuote = true;
+					fieldQuoted = true;
+				  } else {
+					// Next char is quotechar, this is an escaped quotechar
+					if (s.charAt(i + 1) === options.quotechar) {
+					  field += options.quotechar;
+					  // Skip the next char
+					  i += 1;
+					} else {
+					  // It's not escaping, so end quote
+					  inQuote = false;
+					}
+				  }
+				}
+			  }
+			}
+
+			// Add the last field
+			field = processField(field);
+			row.push(field);
+			out.push(row);
+
+			// Expose the ability to discard initial rows
+			if (options.skipinitialrows) out = out.slice(options.skipinitialrows);
+
+			return out;
+		  };
+
+		  my.normalizeLineTerminator = function(csvString, dialect) {
+			dialect = dialect || {};
+
+			// Try to guess line terminator if it's not provided.
+			if (!dialect.lineterminator) {
+			  return csvString.replace(/(\r\n|\n|\r)/gm, "\n");
+			}
+			// if not return the string untouched.
+			return csvString;
+		  };
+
+		  my.objectToArray = function(dataToSerialize) {
+			var a = [];
+			var fieldNames = [];
+			var fieldIds = [];
+			for (var ii = 0; ii < dataToSerialize.fields.length; ii++) {
+			  var id = dataToSerialize.fields[ii].id;
+			  fieldIds.push(id);
+			  var label = dataToSerialize.fields[ii].label ? dataToSerialize.fields[ii].label : id;
+			  fieldNames.push(label);
+			}
+			a.push(fieldNames);
+			for (var ii = 0; ii < dataToSerialize.records.length; ii++) {
+			  var tmp = [];
+			  var record = dataToSerialize.records[ii];
+			  for (var jj = 0; jj < fieldIds.length; jj++) {
+				tmp.push(record[fieldIds[jj]]);
+			  }
+			  a.push(tmp);
+			}
+			return a;
+		  };
+
+		  // ## serialize
+		  //
+		  // See README for docs
+		  //
+		  // Heavily based on uselesscode's JS CSV serializer (MIT Licensed):
+		  // http://www.uselesscode.org/javascript/csv/
+		  my.serialize = function(dataToSerialize, dialect) {
+			var a = null;
+			if (dataToSerialize instanceof Array) {
+			  a = dataToSerialize;
+			} else {
+			  a = my.objectToArray(dataToSerialize);
+			}
+			var options = my.normalizeDialectOptions(dialect);
+
+			var cur = "", // The character we are currently processing.
+			  field = "", // Buffer for building up the current field
+			  row = "",
+			  out = "",
+			  i,
+			  j,
+			  processField;
+
+			processField = function(field) {
+			  if (field === null) {
+				// If field is null set to empty string
+				field = "";
+			  } else if (typeof field === "string" && rxNeedsQuoting.test(field)) {
+				if (options.doublequote) {
+				  field = field.replace(/"/g, '""');
+				}
+				// Convert string to delimited string
+				field = options.quotechar + field + options.quotechar;
+			  } else if (typeof field === "number") {
+				// Convert number to string
+				field = field.toString(10);
+			  }
+
+			  return field;
+			};
+
+			for (i = 0; i < a.length; i += 1) {
+			  cur = a[i];
+
+			  for (j = 0; j < cur.length; j += 1) {
+				field = processField(cur[j]);
+				// If this is EOR append row to output and flush row
+				if (j === cur.length - 1) {
+				  row += field;
+				  out += row + options.lineterminator;
+				  row = "";
+				} else {
+				  // Add the current field to the current row
+				  row += field + options.delimiter;
+				}
+				// Flush the field buffer
+				field = "";
+			  }
+			}
+
+			return out;
+		  };
+
+		  var rxIsInt = /^\d+$/,
+			rxIsFloat = /^\d*\.\d+$|^\d+\.\d*$/,
+			// If a string has leading or trailing space,
+			// contains a comma double quote or a newline
+			// it needs to be quoted in CSV output
+			rxNeedsQuoting = /^\s|\s$|,|"|\n/,
+			trim = (function() {
+			  // Fx 3.1 has a native trim function, it's about 10x faster, use it if it exists
+			  if (String.prototype.trim) {
+				return function(s) {
+				  return s.trim();
+				};
+			  } else {
+				return function(s) {
+				  return s.replace(/^\s*/, "").replace(/\s*$/, "");
+				};
+			  }
+			})();
+
+		  function chomp(s, lineterminator) {
+			if (s.charAt(s.length - lineterminator.length) !== lineterminator) {
+			  // Does not end with \n, just return string
+			  return s;
+			} else {
+			  // Remove the \n
+			  return s.substring(0, s.length - lineterminator.length);
+			}
+		  }
+		})(CSV);
+
+		// backwards compatability for use in Recline
+		var recline = recline || {};
+		recline.Backend = recline.Backend || {};
+		recline.Backend.CSV = CSV;
+
+		if (typeof module !== 'undefined' && module.exports) {
+		  module.exports = CSV;
+		}
+	</script>
+	<script>
+	
+		function sleep(ms) {
+			return new Promise(resolve => setTimeout(resolve, ms));
+		}
+		
+		var parts = window.location.search.substr(1).split("&");
+		var $_GET = {};
+		for (var i = 0; i < parts.length; i++) {
+			var temp = parts[i].split("=");
+			$_GET[decodeURIComponent(temp[0])] = decodeURIComponent(temp[1]);
+		}
+	
+		const nextURL = 'santa.html';
+		const nextTitle = 'Regalo de Navidad ';
+		const nextState = { additionalInformation: 'Updated the URL with JS' };
+		window.history.replaceState(nextState, nextTitle, nextURL);
+		
+		fetch("fromto.csv").then(res => res.text())
+		.then(csv => {
+			var fromto = CSV.parse(csv)
+		
+			fetch("dict.csv").then(res => res.text())
+			.then(csv => {
+				var dict = CSV.parse(csv)
+				if(dict[$_GET.id][1] == $_GET.pwd){
+					document.getElementById("goodCard").hidden = false;
+					sleep(3500).then(() => {
+						document.getElementById("toName").innerText = dict[fromto[$_GET.id][1]][0]
+						document.getElementById("toPresent").hidden = true;
+						document.getElementById("toName").hidden = false;
+					});
+				} else {
+					document.getElementById("badCard").hidden = false;
+				}
+			});
+		});
+		
+		
+		
+
+		
+	</script>
+</head>
+<body class="card m-3">
+	<div class="card-body" id="goodCard" hidden>
+
+		<h1>Feliz Navidad</h1>
+		<hr />
+		<p>Te toco de intercambio a...</p>
+
+		<br>
+		
+		<div style="height: 150px;">
+			<div id="toPresent">
+				<img width="200" src="gift.gif">
+			</div>
+			<br>
+			<span class="display-2 m-5" id="toName" hidden>
+				Nombre
+			</span>
+		</div>
+
+		<br>
+		<br>
+		<div>
+			<img width="50" src="top.png">
+			<span id="secreto">Recuerda que es secreto asi que no le digas a nadie</span>
+		</div>
+		
+	</div>
+	<div class="card-body" id="badCard" hidden>
+
+		<h1>Feliz Navidad</h1>
+		<hr />
+		<p>Estas siendo travieso, puro carbon para ti</p>
+
+		<div style="height: 150px;">
+			<div id="toPresent" class="m-4">
+				<img width="200" src="coal.webp">
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		
+	</div>
+</body>
+  
+</html>
